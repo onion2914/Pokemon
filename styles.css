@@ -1,0 +1,111 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+#container {
+  width: 100%;
+  margin: 15px auto;
+}
+
+#pokemon_search_form{
+  text-align: center;
+}
+
+h1 {
+  font-size: 18px;
+  /* text-align: center; */
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul > li {
+  padding-bottom: 6px;
+}
+
+.btn {
+  width: 100px;
+  padding: 7px;
+  border-radius: 5px;
+  color: #fff;
+  background: #00aaff;
+  box-shadow: 0 3px 0 #0088cc;
+  cursor: pointer;
+  margin: 0 auto 15px;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+.btn:active {
+  -webkit-transform: translate(0,2px);
+	-moz-transform: translate(0,2px);
+	transform: translate(0,2px);
+	border-bottom:none;
+}
+
+.searchConditions input{
+    display: none;
+}
+
+.searchConditions label{
+    display: block;
+    float: left;
+    cursor: pointer;
+    width: 30px;
+    margin: 0;
+    padding: 5px 5px;
+    border-right: 1px solid #abb2b7;
+    background: #bdc3c7;
+    color: #555e64;
+    font-size: 10px;
+    text-align: center;
+    line-height: 1;
+    transition: .2s;
+}
+
+.searchConditions label:first-of-type{
+    border-radius: 3px 0 0 3px;
+}
+
+.searchConditions label:last-of-type{
+    border-right: 0px;
+    border-radius: 0 3px 3px 0;
+}
+
+.searchConditions input[type="radio"]:checked + label {
+    background-color: #a1b91d;
+    color: #fff;
+}
+
+.pokemon_search{
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.sorting_btn {
+  width: 5px;
+  padding: 3px;
+  border-radius: 3px;
+  /* background: #0e5e86; */
+  /* box-shadow: 0 3px 0 #0088cc; */
+  cursor: pointer;
+  margin: 0 auto 15px;
+}
+
+.sorting_btn_none {
+  color: rgb(78, 78, 78);
+}
+.sorting_btn_ascending {
+  color: rgb(255, 0, 0);
+
+}
+
+.sorting_btn_descending {
+  color: rgb(0, 204, 255);
+}
